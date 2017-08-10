@@ -1,0 +1,382 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Allen Chen, RM, LIC=8MZ9U-ST82P-EYUVT-RXUQR-H6EJ7-MYQRR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\SummerCamp\SummerCamp\MDK-ARM\X_Infantry.uvprojx
+Project File Date:  08/09/2017
+
+<h2>Output:</h2>
+Build target 'X_Infantry'
+compiling system_stm32f4xx.c...
+assembling startup_stm32f427xx.s...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_pcd_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pcd.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_ll_usb.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_iwdg.c...
+compiling croutine.c...
+compiling port.c...
+compiling cmsis_os.c...
+compiling timers.c...
+compiling event_groups.c...
+compiling queue.c...
+compiling list.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling usbd_core.c...
+compiling usbd_cdc.c...
+compiling usbd_ioreq.c...
+compiling usbd_ctlreq.c...
+compiling freertos.c...
+compiling main.c...
+compiling usbd_conf.c...
+compiling tim.c...
+compiling usart.c...
+compiling usbd_cdc_if.c...
+compiling usbd_desc.c...
+compiling can.c...
+compiling gpio.c...
+compiling usb_device.c...
+compiling stm32f4xx_it.c...
+compiling dma.c...
+compiling stm32f4xx_hal_msp.c...
+compiling spi.c...
+compiling iwdg.c...
+compiling rtos_init.c...
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\rtos\rtos_init.c: 4 warnings, 0 errors
+compiling rtos_semaphore.c...
+compiling rtos_task.c...
+..\Framework\applications\tasks_upper.h(11): warning:  #1295-D: Deprecated declaration CxfProcessData - give arg types
+  void CxfProcessData();
+..\Framework\applications\tasks_upper.h(13): warning:  #1295-D: Deprecated declaration zykProcessData - give arg types
+  void zykProcessData();
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\applications\tasks_Hero.h(27): warning:  #1295-D: Deprecated declaration Hero_Prepare_Get_Bullet - give arg types
+  void Hero_Prepare_Get_Bullet();
+..\Framework\applications\tasks_Hero.h(28): warning:  #1295-D: Deprecated declaration Hero_Recover - give arg types
+  void Hero_Recover();
+..\Framework\applications\tasks_Hero.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Framework\rtos\rtos_task.c: 9 warnings, 0 errors
+compiling peripheral_can.c...
+compiling peripheral_gpio.c...
+compiling peripheral_spi.c...
+compiling peripheral_usart.c...
+compiling peripheral_tim.c...
+compiling utilities_debug.c...
+compiling utilities_iopool.c...
+compiling utilities_tim.c...
+compiling drivers_led.c...
+compiling drivers_imu.c...
+compiling drivers_buzzer.c...
+compiling drivers_canmotor.c...
+..\Framework\drivers\drivers_canmotor.c(153): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                IOPool_pGetWriteData(CMFLRxIOPool)->RotateSpeed = CMFLrealAngleDiff * 1000 / 6.0;
+..\Framework\drivers\drivers_canmotor.c(172): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                IOPool_pGetWriteData(CMFRRxIOPool)->RotateSpeed = CMFRrealAngleDiff * 1000 / 6.0;
+..\Framework\drivers\drivers_canmotor.c(191): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                IOPool_pGetWriteData(CMBLRxIOPool)->RotateSpeed = CMBLrealAngleDiff * 1000 / 6.0;
+..\Framework\drivers\drivers_canmotor.c(210): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                IOPool_pGetWriteData(CMBRRxIOPool)->RotateSpeed = CMBRrealAngleDiff * 1000 / 6.0;
+..\Framework\drivers\drivers_canmotor.c(137): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "CMFLrealAngleCurr" (declared at line 143)
+            variable "CMFRrealAngleCurr" (declared at line 162)
+            variable "CMBLrealAngleCurr" (declared at line 181)
+            variable "CMBRrealAngleCurr" (declared at line 200)
+                switch(CMGMCanRxMsg.StdId){
+                ^
+..\Framework\drivers\drivers_canmotor.c: 5 warnings, 0 errors
+compiling drivers_uart.c...
+compiling drivers_uartrc.c...
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\drivers\drivers_uartrc.c: 4 warnings, 0 errors
+compiling drivers_uartupper.c...
+..\Framework\applications\tasks_upper.h(11): warning:  #1295-D: Deprecated declaration CxfProcessData - give arg types
+  void CxfProcessData();
+..\Framework\applications\tasks_upper.h(13): warning:  #1295-D: Deprecated declaration zykProcessData - give arg types
+  void zykProcessData();
+..\Framework\drivers\drivers_uartupper.c(75): warning:  #1-D: last line of file ends without a newline
+  }
+..\Framework\drivers\drivers_uartupper.c: 3 warnings, 0 errors
+compiling drivers_flash.c...
+compiling drivers_sonar.c...
+compiling drivers_plate_motor.c...
+..\Framework\drivers\drivers_plate_motor.c(31): warning:  #1-D: last line of file ends without a newline
+  }
+..\Framework\drivers\drivers_plate_motor.c: 1 warning, 0 errors
+compiling UserProtocal.c...
+compiling drivers_uartjudge.c...
+..\Framework\drivers\drivers_uartjudge.c(209): warning:  #175-D: subscript out of range
+    c[0] = buffer[38];c[1] = buffer[39];c[2] = buffer[40];c[3] = buffer[41];
+..\Framework\drivers\drivers_uartjudge.c(209): warning:  #175-D: subscript out of range
+    c[0] = buffer[38];c[1] = buffer[39];c[2] = buffer[40];c[3] = buffer[41];
+..\Framework\drivers\drivers_uartjudge.c(209): warning:  #175-D: subscript out of range
+    c[0] = buffer[38];c[1] = buffer[39];c[2] = buffer[40];c[3] = buffer[41];
+..\Framework\drivers\drivers_uartjudge.c(209): warning:  #175-D: subscript out of range
+    c[0] = buffer[38];c[1] = buffer[39];c[2] = buffer[40];c[3] = buffer[41];
+..\Framework\drivers\drivers_uartjudge.c: 4 warnings, 0 errors
+compiling tasks_motor.c...
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\tasks_upper.h(11): warning:  #1295-D: Deprecated declaration CxfProcessData - give arg types
+  void CxfProcessData();
+..\Framework\applications\tasks_upper.h(13): warning:  #1295-D: Deprecated declaration zykProcessData - give arg types
+  void zykProcessData();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\applications\tasks_motor.c: 6 warnings, 0 errors
+compiling application_pidfunc.c...
+compiling tasks_upper.c...
+..\Framework\applications\tasks_upper.h(11): warning:  #1295-D: Deprecated declaration CxfProcessData - give arg types
+  void CxfProcessData();
+..\Framework\applications\tasks_upper.h(13): warning:  #1295-D: Deprecated declaration zykProcessData - give arg types
+  void zykProcessData();
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\applications\tasks_Hero.h(27): warning:  #1295-D: Deprecated declaration Hero_Prepare_Get_Bullet - give arg types
+  void Hero_Prepare_Get_Bullet();
+..\Framework\applications\tasks_Hero.h(28): warning:  #1295-D: Deprecated declaration Hero_Recover - give arg types
+  void Hero_Recover();
+..\Framework\applications\tasks_Hero.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Framework\applications\tasks_upper.c(34): warning:  #177-D: variable "cnt" was declared but never referenced
+                static int cnt=0;
+..\Framework\applications\tasks_upper.c(97): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                if(strcmp(buf,"U")==0)
+..\Framework\applications\tasks_upper.c(102): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"D")==0)
+..\Framework\applications\tasks_upper.c(107): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                if(strcmp(buf,"L")==0)
+..\Framework\applications\tasks_upper.c(112): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"R")==0)
+..\Framework\applications\tasks_upper.c(117): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"GM")==0)
+..\Framework\applications\tasks_upper.c(136): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"GM_RUN")==0)
+..\Framework\applications\tasks_upper.c(150): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYPP","$","@",data))
+..\Framework\applications\tasks_upper.c(156): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYPI","$","@",data))
+..\Framework\applications\tasks_upper.c(162): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYPD","$","@",data))
+..\Framework\applications\tasks_upper.c(168): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYSP","$","@",data))
+..\Framework\applications\tasks_upper.c(174): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYSI","$","@",data))
+..\Framework\applications\tasks_upper.c(180): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMYSD","$","@",data))
+..\Framework\applications\tasks_upper.c(187): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPPP","$","@",data))
+..\Framework\applications\tasks_upper.c(193): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPPI","$","@",data))
+..\Framework\applications\tasks_upper.c(199): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPPD","$","@",data))
+..\Framework\applications\tasks_upper.c(205): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPSP","$","@",data))
+..\Framework\applications\tasks_upper.c(211): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPSI","$","@",data))
+..\Framework\applications\tasks_upper.c(217): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMPSD","$","@",data))
+..\Framework\applications\tasks_upper.c(223): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                else if(ComProtocal(buf,"#GMFP","$","@",data))
+..\Framework\applications\tasks_upper.c(230): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"CM")==0)
+..\Framework\applications\tasks_upper.c(235): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"CMS")==0)
+..\Framework\applications\tasks_upper.c(248): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"aux34+")==0)
+..\Framework\applications\tasks_upper.c(255): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"aux34-")==0)
+..\Framework\applications\tasks_upper.c(262): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"aux6+")==0)
+..\Framework\applications\tasks_upper.c(269): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"aux6-")==0)
+..\Framework\applications\tasks_upper.c(276): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"aux")==0)
+..\Framework\applications\tasks_upper.c(281): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"RC")==0)
+..\Framework\applications\tasks_upper.c(293): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        testdata=(testdata- 1024) / 660.0 * 1000;
+..\Framework\applications\tasks_upper.c(297): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"MPU")==0)
+..\Framework\applications\tasks_upper.c(309): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"MPQ")==0)
+..\Framework\applications\tasks_upper.c(313): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"MPR")==0)
+..\Framework\applications\tasks_upper.c(318): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"RD1")==0)
+..\Framework\applications\tasks_upper.c(331): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"RD2")==0)
+..\Framework\applications\tasks_upper.c(346): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"S")==0)
+..\Framework\applications\tasks_upper.c(350): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"Plate")==0)
+..\Framework\applications\tasks_upper.c(356): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"BF+")==0)
+..\Framework\applications\tasks_upper.c(360): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"BF-")==0)
+..\Framework\applications\tasks_upper.c(364): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"GET")==0)
+..\Framework\applications\tasks_upper.c(369): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                else if(strcmp(buf,"GET-")==0)
+..\Framework\applications\tasks_upper.c(374): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                strcpy(buf,"\0");
+..\Framework\applications\tasks_upper.c: 50 warnings, 0 errors
+compiling application_setmotor.c...
+compiling application_chassiscontrol.c...
+compiling task_quaternion.c...
+..\Framework\applications\task_quaternion.c(81): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        if(halfT>0.001)
+..\Framework\applications\task_quaternion.c: 1 warning, 0 errors
+compiling application_gimbalcontrol.c...
+compiling application_auxmotorcontrol.c...
+..\Framework\applications\application_auxmotorcontrol.c(288): warning:  #1-D: last line of file ends without a newline
+  }
+..\Framework\applications\application_auxmotorcontrol.c: 1 warning, 0 errors
+compiling application_remotecontrol.c...
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\applications\tasks_Hero.h(27): warning:  #1295-D: Deprecated declaration Hero_Prepare_Get_Bullet - give arg types
+  void Hero_Prepare_Get_Bullet();
+..\Framework\applications\tasks_Hero.h(28): warning:  #1295-D: Deprecated declaration Hero_Recover - give arg types
+  void Hero_Recover();
+..\Framework\applications\tasks_Hero.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Framework\applications\application_remotecontrol.c(201): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                pitchAngleTarget -= mouse->y* MOUSE_TO_PITCH_ANGLE_INC_FACT;  //(rc->ch3 - (int16_t)REMOTE_CONTROLLER_STICK_OFFSET) * STICK_TO_PITCH_ANGLE_INC_FACT;
+..\Framework\applications\application_remotecontrol.c(195): warning:  #550-D: variable "forward_back_speed" was set but never used
+        static uint16_t forward_back_speed = 0;
+..\Framework\applications\application_remotecontrol.c(196): warning:  #550-D: variable "left_right_speed" was set but never used
+        static uint16_t left_right_speed = 0;
+..\Framework\applications\application_remotecontrol.c(197): warning:  #550-D: variable "rotate_speed" was set but never used
+        static uint16_t rotate_speed=0;
+..\Framework\applications\application_remotecontrol.c: 11 warnings, 0 errors
+compiling tasks_Hero.c...
+..\Framework\applications\tasks_motor.h(30): warning:  #1295-D: Deprecated declaration ShootOnce - give arg types
+  void ShootOnce();
+..\Framework\applications\tasks_Hero.h(27): warning:  #1295-D: Deprecated declaration Hero_Prepare_Get_Bullet - give arg types
+  void Hero_Prepare_Get_Bullet();
+..\Framework\applications\tasks_Hero.h(28): warning:  #1295-D: Deprecated declaration Hero_Recover - give arg types
+  void Hero_Recover();
+..\Framework\applications\tasks_Hero.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Framework\applications\application_remotecontrol.h(133): warning:  #1295-D: Deprecated declaration GetShootState - give arg types
+  Shoot_State_e GetShootState();
+..\Framework\applications\application_remotecontrol.h(149): warning:  #1295-D: Deprecated declaration StartBulletFrictionWheel - give arg types
+  void StartBulletFrictionWheel();
+..\Framework\applications\application_remotecontrol.h(150): warning:  #1295-D: Deprecated declaration StopBulletFrictionWheel - give arg types
+  void StopBulletFrictionWheel();
+..\Framework\applications\tasks_Hero.c(12): warning:  #1295-D: Deprecated declaration Hero_Recover - give arg types
+  void Hero_Recover();
+..\Framework\applications\tasks_Hero.c(15): warning:  #1295-D: Deprecated declaration Hero_Prepare_Get_Bullet - give arg types
+  void Hero_Prepare_Get_Bullet();
+..\Framework\applications\tasks_Hero.c(16): warning:  #1295-D: Deprecated declaration Hero_Auto_Get_Bullet - give arg types
+  void Hero_Auto_Get_Bullet();
+..\Framework\applications\tasks_Hero.c(17): warning:  #1295-D: Deprecated declaration Hero_Shoot_1 - give arg types
+  void Hero_Shoot_1();
+..\Framework\applications\tasks_Hero.c(18): warning:  #1295-D: Deprecated declaration Hero_Shoot_4 - give arg types
+  void Hero_Shoot_4();
+..\Framework\applications\tasks_Hero.c(19): warning:  #1295-D: Deprecated declaration Stuck_Process - give arg types
+  void Stuck_Process();
+..\Framework\applications\tasks_Hero.c(20): warning:  #1295-D: Deprecated declaration Hero_Stop_Auto_Get_Bullet - give arg types
+  void Hero_Stop_Auto_Get_Bullet();
+..\Framework\applications\tasks_Hero.c(303): warning:  #1-D: last line of file ends without a newline
+  }
+..\Framework\applications\tasks_Hero.c: 15 warnings, 0 errors
+linking...
+Program Size: Code=59808 RO-data=1396 RW-data=3484 ZI-data=59700  
+"X_Infantry\X_Infantry.axf" - 0 Error(s), 114 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\SummerCamp\SummerCamp\MDK-ARM\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
