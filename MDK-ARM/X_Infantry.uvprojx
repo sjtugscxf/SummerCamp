@@ -959,14 +959,14 @@
               <FilePath>..\Framework\drivers\drivers_flash.h</FilePath>
             </File>
             <File>
-              <FileName>drivers_sonar.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Framework\drivers\drivers_sonar.c</FilePath>
-            </File>
-            <File>
               <FileName>drivers_sonar_low.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Framework\drivers\drivers_sonar_low.h</FilePath>
+            </File>
+            <File>
+              <FileName>drivers_sonar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Framework\drivers\drivers_sonar.c</FilePath>
             </File>
             <File>
               <FileName>drivers_sonar_user.h</FileName>

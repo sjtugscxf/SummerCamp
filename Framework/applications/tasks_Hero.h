@@ -31,4 +31,6 @@ extern Hero_Order_t Hero_Order;
 extern Hero_State_t Hero_State;
 extern double aut_get_bullet_base_height;
 void HeroTask(void const * argument);
+
+extern uint16_t can_signal;
 #endif

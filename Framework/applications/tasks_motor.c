@@ -62,13 +62,14 @@ void CMGMControlTask(void const * argument){
 			//FFollowLoc.traverse = (float)FollowLoc.traverse;
 			
 			ChassisSpeedRef.forward_back_ref = DISTANCE_KP * (FOLLOW_DISTANCE - FollowLoc.distance);
-			if(ChassisSpeedRef.forward_back_ref>1500) ChassisSpeedRef.forward_back_ref = 1500;
-			if(ChassisSpeedRef.forward_back_ref<-1500) ChassisSpeedRef.forward_back_ref = -1500;
+			if(ChassisSpeedRef.forward_back_ref>6000) ChassisSpeedRef.forward_back_ref = 6000;
+			if(ChassisSpeedRef.forward_back_ref<-6000) ChassisSpeedRef.forward_back_ref = -6000;
 			
-			ChassisSpeedRef.rotate_ref = ROTATE_KP * (FOLLOW_ROTATE - FollowLoc.rotate);
-			if(ChassisSpeedRef.rotate_ref>1500) ChassisSpeedRef.rotate_ref = 1500;
-			if(ChassisSpeedRef.rotate_ref<-1500) ChassisSpeedRef.rotate_ref = -1500;
+			ChassisSpeedRef.rotate_ref = ROTATE_KP * ( FollowLoc.rotate - FOLLOW_ROTATE);
+			if(ChassisSpeedRef.rotate_ref>10000) ChassisSpeedRef.rotate_ref = 10000;
+			if(ChassisSpeedRef.rotate_ref<-10000) ChassisSpeedRef.rotate_ref = -10000;
 			
+			/*
 			if(FFollowLoc.traverse>0)
 			{
 				ChassisSpeedRef.left_right_ref = 1000;
@@ -80,6 +81,9 @@ void CMGMControlTask(void const * argument){
 				FFollowLoc.traverse ++ ;
 			}
 			else ChassisSpeedRef.left_right_ref = 0;
+		}
+		
+		*/
 		}
 		setChassisWithSpeed(ChassisSpeedRef.forward_back_ref, ChassisSpeedRef.left_right_ref, ChassisSpeedRef.rotate_ref);
 	}

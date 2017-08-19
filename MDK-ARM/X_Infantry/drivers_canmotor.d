@@ -63,3 +63,4 @@ x_infantry\drivers_canmotor.o: ..\Framework\rtos\rtos_init.h
 x_infantry\drivers_canmotor.o: ..\Framework\rtos\rtos_semaphore.h
 x_infantry\drivers_canmotor.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 x_infantry\drivers_canmotor.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+x_infantry\drivers_canmotor.o: ..\Framework\applications\tasks_Hero.h

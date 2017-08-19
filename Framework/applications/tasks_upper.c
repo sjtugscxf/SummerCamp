@@ -58,7 +58,7 @@ void getCtrlUartTask(void const * argument){
 
 void CxfProcessData()
 {
-	fw_printf("verify OK\r\n");
+	
 	
 	FollowLoc.distance = ((0x00000000 | buffer[2]) | (buffer[1]<<8));
 	FollowLoc.rotate = ((0x00000000 | buffer[5]) | (buffer[4]<<8));
@@ -66,9 +66,16 @@ void CxfProcessData()
 	
 	FFollowLoc.traverse += FollowLoc.traverse - 1000;
 	
-	fw_printf("distance: %d \r\n",FollowLoc.distance);
-	fw_printf("rotate: %d \r\n",FollowLoc.rotate);
-	fw_printf("traverse: %d \r\n",FollowLoc.traverse);
+	static uint16_t veri_cnt = 0;
+	veri_cnt ++;
+	if(veri_cnt>50)
+	{
+		fw_printf("verify OK\r\n");
+		fw_printf("distance: %d \r\n",FollowLoc.distance);
+		fw_printf("rotate: %d \r\n",FollowLoc.rotate);
+		fw_printf("traverse: %d \r\n",FollowLoc.traverse);
+		veri_cnt = 0;
+	}
 }
 
 uint8_t print_data=0;

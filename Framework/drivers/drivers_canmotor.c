@@ -10,6 +10,7 @@
 #include "utilities_tim.h"
 #include "rtos_init.h"
 #include "rtos_semaphore.h"
+#include "tasks_Hero.h"
 
 //RxIOPool
 NaiveIOPoolDefine(CMFLRxIOPool, {0});
@@ -136,7 +137,8 @@ void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef* hcan){
 	if(hcan == &CMGMMOTOR_CAN){
 		switch(CMGMCanRxMsg.StdId){
 			case CMFL_RXID:
-				IOPool_pGetWriteData(CMFLRxIOPool)->angle = CanRxGetU16(CMGMCanRxMsg, 0);
+				//IOPool_pGetWriteData(CMFLRxIOPool)->angle = CanRxGetU16(CMGMCanRxMsg, 0);
+				can_signal = CanRxGetU16(CMGMCanRxMsg, 0);
 				IOPool_pGetWriteData(CMFLRxIOPool)->RotateSpeed = CanRxGetU16(CMGMCanRxMsg, 1);
 				//EC06
 				static float CMFLrealAngleLast = 0;

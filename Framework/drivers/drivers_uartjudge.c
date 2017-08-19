@@ -131,7 +131,7 @@ uint8_t receiving = 0;
 uint8_t received = 0;
 uint8_t buffer[10] = {0}; 
 uint8_t buffercnt = 0;
-FollowLoc_t FollowLoc = {300,300,1000};
+FollowLoc_t FollowLoc = {200,200,1000};
 
 void judgeUartRxCpltCallback(void)
 {

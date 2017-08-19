@@ -19,9 +19,26 @@ void Hero_Shoot_4();
 void Stuck_Process();
 void Hero_Stop_Auto_Get_Bullet();
 
+uint16_t can_signal = 0x1234;
+
 void HeroTask(void const * argument){
 	while(1)
 	{
+		if(can_signal == 0x1234)
+		{
+			if(HAL_GPIO_ReadPin(ALARM_IN_GPIO_Port,ALARM_IN_Pin)) HAL_GPIO_WritePin(ALARM_OUT_GPIO_Port,ALARM_OUT_Pin,GPIO_PIN_SET);
+			else HAL_GPIO_WritePin(ALARM_OUT_GPIO_Port,ALARM_OUT_Pin,GPIO_PIN_RESET);
+		}
+		else if (can_signal == 0x5678)
+		{
+			HAL_GPIO_WritePin(ALARM_OUT_GPIO_Port,ALARM_OUT_Pin,GPIO_PIN_RESET);
+		}
+		else
+		{
+			HAL_GPIO_WritePin(ALARM_OUT_GPIO_Port,ALARM_OUT_Pin,GPIO_PIN_SET);
+		}
+		
+		
 		switch(Hero_Order)
 		{
 			case HERO_GETBULLET:

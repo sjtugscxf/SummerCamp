@@ -29,9 +29,9 @@ typedef struct
 extern FFollowLoc_t FFollowLoc;
 void ShootOnce();
 
-#define FOLLOW_DISTANCE  300.0
-#define FOLLOW_ROTATE  300.0
+#define FOLLOW_DISTANCE  200.0
+#define FOLLOW_ROTATE  200.0
 
-#define DISTANCE_KP  5.0
-#define ROTATE_KP  5.0
+#define DISTANCE_KP  40.0
+#define ROTATE_KP  60.0
 #endif

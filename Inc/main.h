@@ -66,6 +66,12 @@
 #define LED_RED_Pin GPIO_PIN_7
 #define LED_RED_GPIO_Port GPIOE
 
+#define ALARM_OUT_GPIO_Port GPIOA
+#define ALARM_OUT_Pin GPIO_PIN_5
+
+#define ALARM_IN_GPIO_Port GPIOA
+#define ALARM_IN_Pin GPIO_PIN_4
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
